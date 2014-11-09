@@ -1,0 +1,16 @@
+#image_comparator_modal .vp-sc-menu {
+  display: none; }
+#image_comparator_modal .vp-sc-wrapper .vp-sc-main {
+  padding-left: 0px; }
+#image_comparator_modal h3.hndle.vp-sc-element-heading {
+  display: none; }
+#image_comparator_modal li.vp-sc-element.postbox.has-options {
+  border: 0px; }
+#image_comparator_modal.reveal-modal .vp-sc-scroll-container {
+  overflow-y: auto; }
+#image_comparator_modal .vp-sc-cancel.button {
+  display: none; }
+#image_comparator_modal form.vp-sc-element-form.vp-hide.inside {
+  height: inherit;
+  width: 100% !important;
+  clip: inherit; }

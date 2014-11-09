@@ -1,0 +1,25 @@
+#image_comparator_modal {
+  .vp-sc-menu {
+    display: none;
+  }
+  .vp-sc-wrapper .vp-sc-main {
+    padding-left: 0px;
+  }
+  h3.hndle.vp-sc-element-heading {
+    display: none;
+  }
+  li.vp-sc-element.postbox.has-options {
+    border: 0px;
+  }
+  &.reveal-modal .vp-sc-scroll-container {
+    overflow-y: auto;
+  }
+  .vp-sc-cancel.button {
+    display: none;
+  }
+  form.vp-sc-element-form.vp-hide.inside {
+    height: inherit;
+    width: 100% !important;
+    clip: inherit;
+  }
+}
