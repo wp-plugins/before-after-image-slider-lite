@@ -12,7 +12,7 @@ A simple and easy way to compare two images.
 
 == Description ==
 
-The Before After Image Slider for Wordpress allows you to easily show and compare two images. See screenshots or [demo of pro version](demo.scrobble.me/wordpress-before-after-images-slider/) for more information.
+The Before After Image Slider for Wordpress allows you to easily show and compare two images. See screenshots or [demo of pro version](http://demo.scrobble.me/wordpress-before-after-images-slider/) for more information.
 
 The lite version contains the following features:
 
