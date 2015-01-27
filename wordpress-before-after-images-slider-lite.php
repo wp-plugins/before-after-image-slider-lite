@@ -1,11 +1,13 @@
 <?php
 /*
 Plugin Name: Before After Image Slider Lite
-Version: 1.9
+Version: 1.10
 Plugin URI: http://blog.scrobble.me/wordpress-jquery-before-after-image-slider/
 Description: A simple and easy way to compare two images. There is also <a href="http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme" target="_blank">pro version</a> available with more features and better support.
 Author: Adrian M&ouml;rchen
 Author URI: http://blog.scrobble.me/
+Text Domain: wordpress-image-comparator
+Domain Path: /languages/
 */
 
 if (!class_exists('WP')) {
@@ -27,10 +29,10 @@ if (is_admin()) {
 }
 
 function wpbaimages_enque_scripts_and_styles() {
-    wp_enqueue_style('nouislider-css', plugins_url('jquery.nouislider.css', __FILE__), false, '6.2.0');
-    wp_enqueue_script('nouislider-js', plugins_url('jquery.nouislider.min.js', __FILE__), array('jquery'), '6.2.0', false);
-    wp_enqueue_style('wpbaimages-css', plugins_url('ImageComparisonSlider.css', __FILE__), false, 1.9);
-    wp_enqueue_script('wpbaimages-js', plugins_url('ImageComparisonSlider.js', __FILE__), array('nouislider-js'), 1.9, false);
+    wp_enqueue_style('nouislider-css', plugins_url('jquery.nouislider.css', __FILE__), false, '7.0.10');
+    wp_enqueue_script('nouislider-js', plugins_url('jquery.nouislider.js', __FILE__), array('jquery'), '7.0.10', false);
+    wp_enqueue_style('wpbaimages-css', plugins_url('ImageComparisonSlider.css', __FILE__), false, '1.10');
+    wp_enqueue_script('wpbaimages-js', plugins_url('ImageComparisonSlider.js', __FILE__), array('nouislider-js'), '1.10', false);
 }
 
 function wpbaimages_admin_scripts_and_styles() {
@@ -134,46 +136,29 @@ function wpbaimages_init_row_meta($links, $file) {
 }
 
 function wpbaimages_register_required_plugins() {
-
     $plugins = array(
-
-        // This is an example of how to include a plugin pre-packaged with a theme.
         array(
-            'name' => 'Vafpress (Needed for shortcode generator)',
+            'name' => __('Vafpress (Needed for shortcode generator)', '__PRODUCT_LANGUAGE_KEY__'),
             'slug' => 'vafpress-framework-plugin',
-            'source' => plugin_dir_path(__FILE__) . '/modules/plugins/vafpress-framework-plugin.zip',
+            'source' => 'https://github.com/scrobbleme/vafpress-framework/releases/download/v2.0-MOEWE/vafpress-framework-plugin-2.0-MOEWE.zip',
             'required' => false,
             'version' => '',
         )
     );
 
     $config = array(
-        'default_path' => '', // Default absolute path to pre-packaged plugins.
-        'menu' => 'tgmpa-install-plugins', // Menu slug.
-        'has_notices' => true, // Show admin notices or not.
-        'dismissable' => true, // If false, a user cannot dismiss the nag message.
-        'dismiss_msg' => '', // If 'dismissable' is false, this message will be output at top of nag.
-        'is_automatic' => true, // Automatically activate plugins after installation or not.
-        'message' => '', // Message to output right before the plugins table.
+        'default_path' => '',
+        'menu' => 'tgmpa-install-plugins',
+        'has_notices' => true,
+        'dismissable' => true,
+        'dismiss_msg' => '',
+        'is_automatic' => true,
+        'message' => '',
         'strings' => array(
-            'page_title' => __('Install Required Plugins', 'tgmpa'),
-            'menu_title' => __('Install Plugins', 'tgmpa'),
-            'installing' => __('Installing Plugin: %s', 'tgmpa'), // %s = plugin name.
-            'oops' => __('Something went wrong with the plugin API.', 'tgmpa'),
             'notice_can_install_required' => _n_noop('Before After Image Slider Lite requires the following plugin: %1$s.', 'Before After Image Slider Lite requires the following plugins: %1$s.'), // %1$s = plugin name(s).
             'notice_can_install_recommended' => _n_noop('Before After Image Slider Lite recommends the following plugin: %1$s.', 'Before After Image Slider Lite recommends the following plugins: %1$s.'), // %1$s = plugin name(s).
-            'notice_cannot_install' => _n_noop('Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.'), // %1$s = plugin name(s).
-            'notice_can_activate_required' => _n_noop('The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.'), // %1$s = plugin name(s).
-            'notice_can_activate_recommended' => _n_noop('The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.'), // %1$s = plugin name(s).
-            'notice_cannot_activate' => _n_noop('Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.'), // %1$s = plugin name(s).
             'notice_ask_to_update' => _n_noop('The following plugin needs to be updated to its latest version to ensure maximum compatibility with Before After Image Slider Lite: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with Before After Image Slider Lite: %1$s.'), // %1$s = plugin name(s).
-            'notice_cannot_update' => _n_noop('Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.'), // %1$s = plugin name(s).
-            'install_link' => _n_noop('Begin installing plugin', 'Begin installing plugins'),
-            'activate_link' => _n_noop('Begin activating plugin', 'Begin activating plugins'),
-            'return' => __('Return to Required Plugins Installer', 'tgmpa'),
-            'plugin_activated' => __('Plugin activated successfully.', 'tgmpa'),
-            'complete' => __('All plugins installed and activated successfully. %s', 'tgmpa'), // %s = dashboard link.
-            'nag_type' => 'updated' // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
+            'nag_type' => 'updated'
         )
     );
     tgmpa($plugins, $config);

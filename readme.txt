@@ -4,7 +4,7 @@ Donate link: http://codecanyon.net/item/wordpressjquery-before-after-image-slide
 Tags: after, before, compare, editor, image, shortcode, slider, vafpress
 Requires at least: 4.0
 Tested up to: 4.1
-Stable tag: 1.9
+Stable tag: 1.10
 License: GPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -57,6 +57,10 @@ or
 3. Shortcode Generator
 
 == Changelog ==
+
+= 1.10 =
+* Updated noUISlider to 7.0.10
+* Added better support for localization
 
 = 1.9 =
 * Intial public release
