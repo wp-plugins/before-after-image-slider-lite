@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: WordPress Before After Image Slider Lite\n"
+"Language: de\n"
+
+#: vafpress/vafpress-field-definition.php:3
+#: vafpress/vafpress-field-definition.php:4
+msgid "Before After Image Slider"
+msgstr "Before After Image Slider "
+
+#: vafpress/vafpress-field-definition.php:13
+msgid "Before After Image Slider Lite"
+msgstr "Before After Image Slider Lite"
+
+#: vafpress/vafpress-field-definition.php:20
+msgid "Title"
+msgstr "Titel"
+
+#: vafpress/vafpress-field-definition.php:21
+msgid "An optional title above the images."
+msgstr "Ein optionaler Titel über den Bildern"
+
+#: vafpress/vafpress-field-definition.php:25
+msgid "Left Image"
+msgstr "Linkes Bild"
+
+#: vafpress/vafpress-field-definition.php:28
+msgid "The left image to use. (Required)"
+msgstr "Das linke Bild (erforderlich)."
+
+#: vafpress/vafpress-field-definition.php:32
+msgid "Right Image"
+msgstr "Rechtes Bild"
+
+#: vafpress/vafpress-field-definition.php:35
+msgid "The right image to use. (Required)"
+msgstr "Das rechte Bild (erforderlich)."
+
+#: vafpress/vafpress-field-definition.php:39
+msgid "Width"
+msgstr "Breite"
+
+#: vafpress/vafpress-field-definition.php:42
+msgid "An optional width, use px or % (default is 500px)"
+msgstr "Optionale Breite (px oder %, Standard ist 500px)"
+
+#: vafpress/vafpress-field-definition.php:46
+msgid "Left Alt"
+msgstr "Linkes \"alt\""
+
+#: vafpress/vafpress-field-definition.php:48
+msgid "Specify a value for the <b>\"alt\"</b> attribute of the left image."
+msgstr "Wert für das \"alt\"-Attribute des linken Bildes."
+
+#: vafpress/vafpress-field-definition.php:52
+msgid "Right Alt"
+msgstr "Rechtes \"alt\""
+
+#: vafpress/vafpress-field-definition.php:54
+msgid "Specify a value for the <b>\"alt\"</b> attribute of the right image."
+msgstr "Wert für das \"alt\"-Attribute des rechten Bildes."
+
+#: vafpress/vafpress-field-definition.php:58
+msgid "CSS Classes (i.e. hover)"
+msgstr "CSS-Klassen"
+
+#: vafpress/vafpress-field-definition.php:60
+msgid "Additional CSS classes, use <b>\"hover\"</b> to enable these extras"
+msgstr ""
+
+#: vafpress/vafpress-field-definition.php:66
+msgid "Want to support this plugin or need more features?"
+msgstr "Möchten Sie dieses Plugin unterstützen oder benötigen mehr Funktionalität?"
+
+#: vafpress/vafpress-field-definition.php:67
+msgid "There is also a <a href=\"http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme\" target=\"_blank\">pro version</a> available with direct support and additional features like <strong>more modes, Visual Composer support, setting an inital value, linking images</strong> and <strong>more</strong>...<br /><a href=\"http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme\" target=\"_blank\">Get Pro Version</a>"
+msgstr ""
+
+#: wordpress-before-after-images-slider-lite.php:130
+msgid "Get Pro Version"
+msgstr "Pro Version kaufen"
+
+#: wordpress-before-after-images-slider-lite.php:131
+msgid "Translate"
+msgstr "Übersetzen"
+

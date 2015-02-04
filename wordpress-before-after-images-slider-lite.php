@@ -6,7 +6,7 @@ Plugin URI: http://blog.scrobble.me/wordpress-jquery-before-after-image-slider/
 Description: A simple and easy way to compare two images. There is also <a href="http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme" target="_blank">pro version</a> available with more features and better support.
 Author: Adrian M&ouml;rchen
 Author URI: http://blog.scrobble.me/
-Text Domain: wordpress-image-comparator
+Text Domain: wordpress-before-after-images-slider-lite
 Domain Path: /languages/
 */
 
@@ -14,28 +14,35 @@ if (!class_exists('WP')) {
     die();
 }
 
-require_once('modules/class-tgm-plugin-activation.php');
+require_once 'modules/tgm-plugin-activation.php';
 
 // Add scripts and shortcode
 add_shortcode('image-comparator', 'wpbaimages_shortcode');
 add_action('admin_enqueue_scripts', 'wpbaimages_admin_scripts_and_styles');
 add_action('after_setup_theme', 'wpbaimage_extend_vafpress');
 add_action('wp_enqueue_scripts', 'wpbaimages_enque_scripts_and_styles');
-add_action('tgmpa_register', 'wpbaimages_register_required_plugins');
+add_action('plugins_loaded', 'wpbaimages_load_textdomain');
 
 // Administration
 if (is_admin()) {
     add_filter('plugin_row_meta', 'wpbaimages_init_row_meta', 10, 2);
 }
 
-function wpbaimages_enque_scripts_and_styles() {
+function wpbaimages_load_textdomain()
+{
+    load_plugin_textdomain('wordpress-before-after-images-slider-lite', false, dirname(__FILE__) . '/languages/');
+}
+
+function wpbaimages_enque_scripts_and_styles()
+{
     wp_enqueue_style('nouislider-css', plugins_url('jquery.nouislider.css', __FILE__), false, '7.0.10');
     wp_enqueue_script('nouislider-js', plugins_url('jquery.nouislider.js', __FILE__), array('jquery'), '7.0.10', false);
     wp_enqueue_style('wpbaimages-css', plugins_url('ImageComparisonSlider.css', __FILE__), false, '1.10');
     wp_enqueue_script('wpbaimages-js', plugins_url('ImageComparisonSlider.js', __FILE__), array('nouislider-js'), '1.10', false);
 }
 
-function wpbaimages_admin_scripts_and_styles() {
+function wpbaimages_admin_scripts_and_styles()
+{
     wp_enqueue_style('wpbaimages-vafpress-css', plugins_url('vafpress/vafpress.css', __FILE__), false, 1.9);
 }
 
@@ -44,7 +51,8 @@ function wpbaimages_admin_scripts_and_styles() {
  * @param null $content The content (is not used).
  * @return string The HTML output.
  */
-function wpbaimages_shortcode($attributes, $content = null) {
+function wpbaimages_shortcode($attributes, $content = null)
+{
     $shortcode_attributes = shortcode_atts(array(
         'classes' => '',
         'left' => '',
@@ -106,7 +114,8 @@ function wpbaimages_shortcode($attributes, $content = null) {
 /**
  * Extend
  */
-function wpbaimage_extend_vafpress() {
+function wpbaimage_extend_vafpress()
+{
     if ((!current_user_can('edit_posts') && !current_user_can('edit_pages')) || get_user_option('rich_editing') != 'true') {
         return;
     }
@@ -123,43 +132,16 @@ function wpbaimage_extend_vafpress() {
  * @param $file string The current file.
  * @return array Links including new ones.
  */
-function wpbaimages_init_row_meta($links, $file) {
+function wpbaimages_init_row_meta($links, $file)
+{
     if (strpos($file, plugin_basename(__FILE__)) !== false) {
         return array_merge(
             $links,
             array(
-                '<a href="http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme" target="_blank">' . __('Get Pro Version', 'wordpress-image-comparator-user-values') . '</a>'
+                '<a href="https://poeditor.com/projects/view?id=29123" target="_blank">' . __('Translate', 'wordpress-image-comparator-user-values') . '</a>',
+                '<a href="http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme" target="_blank">' . __('Get Pro Version', 'wordpress-image-comparator-user-values') . '</a>',
             )
         );
     }
     return $links;
-}
-
-function wpbaimages_register_required_plugins() {
-    $plugins = array(
-        array(
-            'name' => __('Vafpress (Needed for shortcode generator)', '__PRODUCT_LANGUAGE_KEY__'),
-            'slug' => 'vafpress-framework-plugin',
-            'source' => 'https://github.com/scrobbleme/vafpress-framework/releases/download/v2.0-MOEWE/vafpress-framework-plugin-2.0-MOEWE.zip',
-            'required' => false,
-            'version' => '',
-        )
-    );
-
-    $config = array(
-        'default_path' => '',
-        'menu' => 'tgmpa-install-plugins',
-        'has_notices' => true,
-        'dismissable' => true,
-        'dismiss_msg' => '',
-        'is_automatic' => true,
-        'message' => '',
-        'strings' => array(
-            'notice_can_install_required' => _n_noop('Before After Image Slider Lite requires the following plugin: %1$s.', 'Before After Image Slider Lite requires the following plugins: %1$s.'), // %1$s = plugin name(s).
-            'notice_can_install_recommended' => _n_noop('Before After Image Slider Lite recommends the following plugin: %1$s.', 'Before After Image Slider Lite recommends the following plugins: %1$s.'), // %1$s = plugin name(s).
-            'notice_ask_to_update' => _n_noop('The following plugin needs to be updated to its latest version to ensure maximum compatibility with Before After Image Slider Lite: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with Before After Image Slider Lite: %1$s.'), // %1$s = plugin name(s).
-            'nag_type' => 'updated'
-        )
-    );
-    tgmpa($plugins, $config);
 }

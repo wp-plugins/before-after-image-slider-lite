@@ -1,0 +1,153 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Before After Image Slider Lite\n"
+"POT-Creation-Date: 2015-02-04 16:27+0100\n"
+"PO-Revision-Date: 2015-02-04 16:30+0100\n"
+"Last-Translator: Adrian Mörchen <adrian@scrobble.me>\n"
+"Language-Team: Ogi Djuraskovic <ognjend@firstsiteguide.com>\n"
+"Language: sr_RS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: modules/*\n"
+
+#: vafpress/vafpress-field-definition.php:3
+#: vafpress/vafpress-field-definition.php:4
+msgid "Before After Image Slider"
+msgstr "Before After Image Slider"
+
+#: vafpress/vafpress-field-definition.php:13
+msgid "Before After Image Slider Lite"
+msgstr "Before After Image Slider Lite"
+
+#: vafpress/vafpress-field-definition.php:20
+msgid "Title"
+msgstr "Naslov"
+
+#: vafpress/vafpress-field-definition.php:21
+msgid "An optional title above the images."
+msgstr "Opcioni naslov iznad slika"
+
+#: vafpress/vafpress-field-definition.php:25
+msgid "Left Image"
+msgstr "Leva slika"
+
+#: vafpress/vafpress-field-definition.php:28
+msgid "The left image to use. (Required)"
+msgstr "Leva slika za upotrebu. (Obavezna)"
+
+#: vafpress/vafpress-field-definition.php:32
+msgid "Right Image"
+msgstr "Desna slika"
+
+#: vafpress/vafpress-field-definition.php:35
+msgid "The right image to use. (Required)"
+msgstr "Desna slika za upotrebu. (Obavezna)"
+
+#: vafpress/vafpress-field-definition.php:39
+msgid "Width"
+msgstr "Širina"
+
+#: vafpress/vafpress-field-definition.php:42
+msgid "An optional width, use px or % (default is 500px)"
+msgstr ""
+"Opciona širina, koristite piksele ili procente (podrazumevana vrednost je "
+"500px)"
+
+#: vafpress/vafpress-field-definition.php:46
+msgid "Left Alt"
+msgstr "Levi Alt"
+
+#: vafpress/vafpress-field-definition.php:48
+msgid "Specify a value for the <b>\"alt\"</b> attribute of the left image."
+msgstr "Odredite vrednost za <b>\"alt\"</b> atribut leve slike."
+
+#: vafpress/vafpress-field-definition.php:52
+msgid "Right Alt"
+msgstr "Desni Alt"
+
+#: vafpress/vafpress-field-definition.php:54
+msgid "Specify a value for the <b>\"alt\"</b> attribute of the right image."
+msgstr "Odredite vrednost za <b>\"alt\"</b> atribut desne slike."
+
+#: vafpress/vafpress-field-definition.php:58
+msgid "CSS Classes (i.e. hover)"
+msgstr "CSS klase (tj. hover)"
+
+#: vafpress/vafpress-field-definition.php:60
+msgid "Additional CSS classes, use <b>\"hover\"</b> to enable these extras"
+msgstr ""
+"Dodatne CSS klase, koristite <b>\"hover\"</b> da biste aktivirali ove "
+"dodatke."
+
+#: vafpress/vafpress-field-definition.php:66
+msgid "Want to support this plugin or need more features?"
+msgstr ""
+"Hoćete da podržite ovaj plugin ili vam je potrebno više funkcionalnosti?"
+
+#: vafpress/vafpress-field-definition.php:67
+msgid ""
+"There is also a <a href=\"http://codecanyon.net/item/wordpressjquery-before-"
+"after-image-slider/6503930?ref=scrobbleme\" target=\"_blank\">pro version</"
+"a> available with direct support and additional features like <strong>more "
+"modes, Visual Composer support, setting an inital value, linking images</"
+"strong> and <strong>more</strong>...<br /><a href=\"http://codecanyon.net/"
+"item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme\" "
+"target=\"_blank\">Get Pro Version</a>"
+msgstr ""
+"Postoji i <a href=\"http://codecanyon.net/item/wordpressjquery-before-after-"
+"image-slider/6503930?ref=scrobbleme\" target=\"_blank\">pro verzija</a> na "
+"raspolaganju sa direktnom podrškom i dodatnim funkcionalnostima, kao što su "
+"<strong>brojniji režimi, podrška za vizuelno slaganje, podešavanje početne "
+"vrednosti, povezane slike</strong> i <strong>još mnogo toga</strong>...<br /"
+"><a href=\"http://codecanyon.net/item/wordpressjquery-before-after-image-"
+"slider/6503930?ref=scrobbleme\" target=\"_blank\">Obezbedite Pro Verziju</a>"
+
+#: wordpress-before-after-images-slider-lite.php:130
+msgid "Get Pro Version"
+msgstr "Obezbedite Pro Verziju"
+
+#: wordpress-before-after-images-slider-lite.php:131
+msgid "Translate"
+msgstr "Преведи"
+
+#~ msgid "Vafpress (Needed for shortcode generator)"
+#~ msgstr "Vafpress (Neophodan za shortcode generator)"
+
+#~ msgid "Before After Image Slider Lite requires the following plugin: %1$s."
+#~ msgid_plural ""
+#~ "Before After Image Slider Lite requires the following plugins: %1$s."
+#~ msgstr[0] "Before After Image Slider Lite zahteva sledeći plugin: %1$s."
+#~ msgstr[1] "Before After Image Slider Lite zahteva sledeće plugin-ove: %1$s."
+
+#~ msgid ""
+#~ "Before After Image Slider Lite recommends the following plugin: %1$s."
+#~ msgid_plural ""
+#~ "Before After Image Slider Lite recommends the following plugins: %1$s."
+#~ msgstr[0] "Before After Image Slider Lite preporučuje sledeći plugin: %1$s."
+#~ msgstr[1] ""
+#~ "Before After Image Slider Lite preporučuje sledeće plugin-ove: %1$s."
+
+#~ msgid ""
+#~ "The following plugin needs to be updated to its latest version to ensure "
+#~ "maximum compatibility with Before After Image Slider Lite: %1$s."
+#~ msgid_plural ""
+#~ "The following plugins need to be updated to their latest version to "
+#~ "ensure maximum compatibility with Before After Image Slider Lite: %1$s."
+#~ msgstr[0] ""
+#~ "Sledeći plugin treba ažurirati na poslednju verziju kako bi se obezbedila "
+#~ "maksimalna kompatibilnost sa plugin-om Before After Image Slider Lite: "
+#~ "%1$s."
+#~ msgstr[1] ""
+#~ "Sledeći plugin-ovi treba da se ažuriraju na poslednje verzije kako bi se "
+#~ "obezbedila maksimalna kompatibilnost sa plugin-om Before After Image "
+#~ "Slider Lite: %1$s."

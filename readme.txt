@@ -4,7 +4,7 @@ Donate link: http://codecanyon.net/item/wordpressjquery-before-after-image-slide
 Tags: after, before, compare, editor, image, shortcode, slider, vafpress
 Requires at least: 4.0
 Tested up to: 4.1
-Stable tag: 1.10
+Stable tag: 1.11
 License: GPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -12,7 +12,7 @@ A simple and easy way to compare two images.
 
 == Description ==
 
-The Before After Image Slider for Wordpress allows you to easily show and compare two images. See screenshots or [demo of pro version](http://demo.scrobble.me/wordpress-before-after-images-slider/) for more information.
+The Before After Image Slider for WordPress allows you to easily show and compare two images. See screenshots or [demo of pro version](http://demo.scrobble.me/wordpress-before-after-images-slider/) for more information.
 
 The lite version contains the following features:
 
@@ -22,6 +22,11 @@ The lite version contains the following features:
 * Set title
 * Shortcode generator
 * Define additional classes
+
+== Translators ==
+* Serbian: [Ogi Djuraskovic](http://firstsiteguide.com/)
+
+Help to [translate](https://poeditor.com/projects/view?order=trans_asc&id=29123) this plugin.
 
 = HINT: = 
 >There is also a [pro version](http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme) available with direct support and additional features like more modes, Visual Composer support, setting an inital value, linking images and more...
@@ -57,6 +62,10 @@ or
 3. Shortcode Generator
 
 == Changelog ==
+
+= 1.11 =
+* Added German translation
+* Added Serbian translation. Thanks to [Ogi Djuraskovic](http://firstsiteguide.com/)
 
 = 1.10 =
 * Updated noUISlider to 7.0.10
