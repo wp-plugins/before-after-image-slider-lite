@@ -23,7 +23,8 @@ The lite version contains the following features:
 * Shortcode generator
 * Define additional classes
 
-== Translators ==
+** Translator **
+
 * Serbian: [Ogi Djuraskovic](http://firstsiteguide.com/)
 
 Help to [translate](https://poeditor.com/projects/view?order=trans_asc&id=29123) this plugin.
