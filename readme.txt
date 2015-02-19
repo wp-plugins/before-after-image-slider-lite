@@ -1,10 +1,10 @@
 === Before After Image Slider Lite ===
 Contributors: adrian2k7
-Donate link: http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme
+Donate link: http://q.gs/83UXn
 Tags: after, before, compare, editor, image, shortcode, slider, vafpress
 Requires at least: 4.0
-Tested up to: 4.1
-Stable tag: 1.11
+Tested up to: 4.1.1
+Stable tag: 1.11.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -23,7 +23,7 @@ The lite version contains the following features:
 * Shortcode generator
 * Define additional classes
 
-** Translator **
+*Translators*
 
 * Serbian: [Ogi Djuraskovic](http://firstsiteguide.com/)
 
@@ -63,6 +63,10 @@ or
 3. Shortcode Generator
 
 == Changelog ==
+
+= 1.11.1 =
+* Removed screenshots from plugin (reduces size)
+
 
 = 1.11 =
 * Added German translation
