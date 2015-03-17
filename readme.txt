@@ -4,7 +4,7 @@ Donate link: http://q.gs/83UXn
 Tags: after, before, compare, editor, image, shortcode, slider, vafpress
 Requires at least: 4.0
 Tested up to: 4.1.1
-Stable tag: 1.11.1
+Stable tag: 1.11.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -20,12 +20,34 @@ The lite version contains the following features:
 * Define left and right alt-Attribute
 * Set width
 * Set title
-* Shortcode generator
+* Shortcode generator (**Note**: You have to install the optional Vafpress framework for this, see FAQ)
 * Define additional classes
 
-*Translators*
+**Support**
+
+Please use the [support forum](http://wordpress.org/support/plugin/before-after-image-slider-lite) in case of any problems or questions before
+just giving a bad rating. We really take this seriously.
+
+**Shortcode**
+
+The basic shortcode looks like this:
+
+`[image-comparator][/image-comparator]`
+
+You may use the following parameters:
+
+* **left**: Url or id of the left image.
+* **left_alt**: "alt" attribute of the left image.
+* **right**: Url or id of the right image.
+* **right_alt**: "alt" attribute of the right image.
+* **title**: Optional title.
+* **width**: Optional with.
+* **classes**:  Additional CSS classes.
+
+**Translators**
 
 * Serbian: [Ogi Djuraskovic](http://firstsiteguide.com/)
+* Turkish: [İbrahim Mumcu](http://www.ibrahimmumcu.com/)
 
 Help to [translate](https://poeditor.com/projects/view?order=trans_asc&id=29123) this plugin.
 
@@ -35,7 +57,11 @@ Help to [translate](https://poeditor.com/projects/view?order=trans_asc&id=29123)
 >[View pro version](http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme)
 
 == Frequently Asked Questions ==
-Currently no entries.
+
+= Where is the shortcode generator? =
+
+To be able to use the shortcode generator, you have to install the optional Vafpress framework. You should be prompted
+for this after activating the plugin. In case of any problems with this read [here](https://www.moewe-studio.com/demo/installation-updating/#install_vafpress).
 
 == Installation ==
 
@@ -63,6 +89,11 @@ or
 3. Shortcode Generator
 
 == Changelog ==
+
+= 1.11.2 =
+
+* Improved description
+* Added Turkish translaton. Thanks to [İbrahim Mumcu](http://www.ibrahimmumcu.com/)
 
 = 1.11.1 =
 * Removed screenshots from plugin (reduces size)

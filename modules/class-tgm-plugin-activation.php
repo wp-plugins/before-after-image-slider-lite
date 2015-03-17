@@ -1699,7 +1699,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
  * @since 2.2.0
  */
 add_action( 'admin_init', 'tgmpa_load_bulk_installer' );
-if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
+if ( !function_exists( 'tgmpa_load_bulk_installer' ) ) {
     function tgmpa_load_bulk_installer() {
 
         if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_Activation::$instance->menu === $_GET['page'] ) ) {
