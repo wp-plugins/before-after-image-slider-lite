@@ -7,7 +7,7 @@ window.Scrobbleme = {
 };
 
 Scrobbleme.ImageComparisonSlider = function (element, jQuery) {
-    var slide, slider, height = 0;
+    var slide, slider;
 
     if (jQuery == undefined) {
         jQuery = window.jQuery;
@@ -40,7 +40,10 @@ Scrobbleme.ImageComparisonSlider = function (element, jQuery) {
 
     /** Extras */
     if (this.domNode.hasClass('hover') && this.supports_hover()) {
-        this.domNode.find('.images').mousemove({'slider': slider, 'slide': slide}, this.clickable_callback.bind(this));
+        this.domNode.find('.images').mousemove({
+            'slider': slider,
+            'slide': slide
+        }, this.throttle(this.clickable_callback.bind(this), 20));
     }
 }
 ;
@@ -52,6 +55,7 @@ Scrobbleme.ImageComparisonSlider.prototype = {
     },
 
     clickable_callback: function (event) {
+
         var newValue = (event.pageX - event.currentTarget.getBoundingClientRect().left) / event.currentTarget.clientWidth * 100;
         jQuery.proxy(event.data.slide, this)(null, {value: newValue});
         event.data.slider.val(newValue);
@@ -83,6 +87,20 @@ Scrobbleme.ImageComparisonSlider.prototype = {
      */
     supports_hover: function () {
         return !navigator.userAgent.match(/(iPod|iPhone|iPad|Android|Windows\sPhone|BlackBerry)/i);
+    },
+
+    // Thanks: http://sampsonblog.com/749/simple-throttle-function
+    throttle: function (callback, threshhold) {
+        var wait = false;
+        return function (event) {
+            if (!wait) {
+                callback(event);
+                wait = true;
+                setTimeout(function () {
+                    wait = false;
+                }, threshhold);
+            }
+        }
     }
 };
 
