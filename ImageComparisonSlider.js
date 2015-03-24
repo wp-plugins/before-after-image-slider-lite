@@ -21,6 +21,7 @@ Scrobbleme.ImageComparisonSlider = function (element, jQuery) {
     slider = this.domNode.find('.slider');
     slider.noUiSlider({
             start: 50,
+            animate: false,
             range: {
                 'min': 0,
                 'max': 100
@@ -30,10 +31,11 @@ Scrobbleme.ImageComparisonSlider = function (element, jQuery) {
             slide: function (event, value) {
                 this.domNode.attr('data-ic-slider-value', value);
                 jQuery.proxy(slide, this)(event, {value: value});
-            }.bind(this)});
+            }.bind(this)
+        });
     jQuery.proxy(slide, this)(null, {value: 50});
-    jQuery.proxy(this.resize_callback, this)({data: {'slider': slider, 'slide': slide, 'element': this }});
-    jQuery(window).resize({'slider': slider, 'slide': slide, 'element': this }, this.resize_callback);
+    jQuery.proxy(this.resize_callback, this)({data: {'slider': slider, 'slide': slide, 'element': this}});
+    jQuery(window).resize({'slider': slider, 'slide': slide, 'element': this}, this.resize_callback);
     this.domNode.find('.images').click({'slider': slider, 'slide': slide}, this.clickable_callback.bind(this));
 
     /** Extras */
@@ -50,7 +52,7 @@ Scrobbleme.ImageComparisonSlider.prototype = {
     },
 
     clickable_callback: function (event) {
-        var newValue = (event.pageX - jQuery(event.currentTarget).offset().left) / event.currentTarget.clientWidth * 100;
+        var newValue = (event.pageX - event.currentTarget.getBoundingClientRect().left) / event.currentTarget.clientWidth * 100;
         jQuery.proxy(event.data.slide, this)(null, {value: newValue});
         event.data.slider.val(newValue);
     },
