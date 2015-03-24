@@ -2,7 +2,7 @@ window.Scrobbleme = {
     widthToScaleUp: 300,
     methods: ['overlay'],
     versions: {
-        'ImageComparisonSlider': '1.9'
+        'ImageComparisonSlider': '1.12'
     }
 };
 

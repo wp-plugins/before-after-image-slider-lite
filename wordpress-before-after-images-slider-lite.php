@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Before After Image Slider Lite
-Version: 1.11
+Version: 1.12
 Plugin URI: http://blog.scrobble.me/wordpress-jquery-before-after-image-slider/
 Description: A simple and easy way to compare two images. There is also <a href="http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme" target="_blank">pro version</a> available with more features and better support.
 Author: Adrian M&ouml;rchen
@@ -13,6 +13,8 @@ Domain Path: /languages/
 if (!class_exists('WP')) {
     die();
 }
+
+define('BEFORE_AFTER_IMAGE_SLIDER_LITE_VERSION', '1.12');
 
 require_once 'modules/tgm-plugin-activation.php';
 
@@ -37,13 +39,13 @@ function wpbaimages_enque_scripts_and_styles()
 {
     wp_enqueue_style('nouislider-css', plugins_url('jquery.nouislider.css', __FILE__), false, '7.0.10');
     wp_enqueue_script('nouislider-js', plugins_url('jquery.nouislider.js', __FILE__), array('jquery'), '7.0.10', false);
-    wp_enqueue_style('wpbaimages-css', plugins_url('ImageComparisonSlider.css', __FILE__), false, '1.10');
-    wp_enqueue_script('wpbaimages-js', plugins_url('ImageComparisonSlider.js', __FILE__), array('nouislider-js'), '1.10', false);
+    wp_enqueue_style('wpbaimages-css', plugins_url('ImageComparisonSlider.css', __FILE__), false, BEFORE_AFTER_IMAGE_SLIDER_LITE_VERSION);
+    wp_enqueue_script('wpbaimages-js', plugins_url('ImageComparisonSlider.js', __FILE__), array('nouislider-js'), BEFORE_AFTER_IMAGE_SLIDER_LITE_VERSION, false);
 }
 
 function wpbaimages_admin_scripts_and_styles()
 {
-    wp_enqueue_style('wpbaimages-vafpress-css', plugins_url('vafpress/vafpress.css', __FILE__), false, 1.9);
+    wp_enqueue_style('wpbaimages-vafpress-css', plugins_url('vafpress/vafpress.css', __FILE__), false, BEFORE_AFTER_IMAGE_SLIDER_LITE_VERSION);
 }
 
 /**
