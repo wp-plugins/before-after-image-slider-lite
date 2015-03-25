@@ -1,11 +1,15 @@
 msgid ""
 msgstr ""
+"Project-Id-Version: WordPress Before After Image Slider Lite\n"
+"POT-Creation-Date: 2015-03-25 10:48+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: POEditor.com\n"
-"Project-Id-Version: WordPress Before After Image Slider Lite\n"
-"Language: de\n"
+"X-Generator: Poedit 1.7.5\n"
 
 #: vafpress/vafpress-field-definition.php:3
 #: vafpress/vafpress-field-definition.php:4
@@ -70,21 +74,45 @@ msgstr "CSS-Klassen"
 
 #: vafpress/vafpress-field-definition.php:60
 msgid "Additional CSS classes, use <b>\"hover\"</b> to enable these extras"
-msgstr "Weitere CSS-Klassen, verwende <b>\"hover\"</b>, um diese Klassen zu aktivieren"
+msgstr ""
+"Weitere CSS-Klassen, verwende <b>\"hover\"</b>, um diese Klassen zu "
+"aktivieren"
 
 #: vafpress/vafpress-field-definition.php:66
 msgid "Want to support this plugin or need more features?"
-msgstr "Möchten Sie dieses Plugin unterstützen oder benötigen mehr Funktionalität?"
+msgstr ""
+"Möchten Sie dieses Plugin unterstützen oder benötigen mehr Funktionalität?"
 
 #: vafpress/vafpress-field-definition.php:67
-msgid "There is also a <a href=\"http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme\" target=\"_blank\">pro version</a> available with direct support and additional features like <strong>more modes, Visual Composer support, setting an inital value, linking images</strong> and <strong>more</strong>...<br /><a href=\"http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme\" target=\"_blank\">Get Pro Version</a>"
-msgstr "Es ist auch eine <a href=\"http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme\" target=\"_blank\">Pro Version</a> mit direktem Support und zusätzlichen Features wie <strong>weiteren Modi, Unterstützung für visuellen Composer, Festlegen eines Anfangswertes, Verknüpfen von Bildern</strong> und <strong>mehr</strong> verfügbar...<br /><a href=\"http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme\" target=\"_blank\">Pro Version kaufen</a>"
+msgid ""
+"There is also a <a href=\"http://codecanyon.net/item/wordpressjquery-before-"
+"after-image-slider/6503930?ref=scrobbleme\" target=\"_blank\">pro version</"
+"a> available with direct support and additional features like <strong>more "
+"modes, Visual Composer support, setting an inital value, linking images</"
+"strong> and <strong>more</strong>...<br /><a href=\"http://codecanyon.net/"
+"item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme\" "
+"target=\"_blank\">Get Pro Version</a>"
+msgstr ""
+"Es ist auch eine <a href=\"http://codecanyon.net/item/wordpressjquery-before-"
+"after-image-slider/6503930?ref=scrobbleme\" target=\"_blank\">Pro Version</"
+"a> mit direktem Support und zusätzlichen Features wie <strong>weiteren Modi, "
+"Unterstützung für visuellen Composer, Festlegen eines Anfangswertes, "
+"Verknüpfen von Bildern</strong> und <strong>mehr</strong> verfügbar...<br /"
+"><a href=\"http://codecanyon.net/item/wordpressjquery-before-after-image-"
+"slider/6503930?ref=scrobbleme\" target=\"_blank\">Pro Version kaufen</a>"
 
-#: wordpress-before-after-images-slider-lite.php:130
-msgid "Get Pro Version"
-msgstr "Pro Version kaufen"
-
-#: wordpress-before-after-images-slider-lite.php:131
+#: wordpress-before-after-images-slider-lite.php:149
 msgid "Translate"
 msgstr "Übersetzen"
 
+#: wordpress-before-after-images-slider-lite.php:150
+msgid "Support Forum"
+msgstr "Support Forum"
+
+#: wordpress-before-after-images-slider-lite.php:151
+msgid "Please Rate"
+msgstr "Bewerten"
+
+#: wordpress-before-after-images-slider-lite.php:152
+msgid "Get Pro Version"
+msgstr "Pro Version kaufen"

@@ -4,7 +4,7 @@ Donate link: http://q.gs/83UXn
 Tags: after, before, compare, editor, image, shortcode, slider, vafpress
 Requires at least: 4.0
 Tested up to: 4.1.1
-Stable tag: 1.12
+Stable tag: 1.12.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -12,7 +12,7 @@ A simple and easy way to compare two images.
 
 == Description ==
 
-The Before After Image Slider for WordPress allows you to easily show and compare two images. See screenshots or [demo of pro version](http://demo.scrobble.me/wordpress-before-after-images-slider/) for more information.
+The Before After Image Slider for WordPress allows you to easily show and compare two images. See screenshots or [demo](http://test.moewe-studio.com/before-after-image-slider-lite) for more information.
 
 The lite version contains the following features:
 
@@ -32,7 +32,7 @@ just giving a bad rating. We really take this seriously.
 
 The basic shortcode looks like this:
 
-`[image-comparator][/image-comparator]`
+`[image-comparator left="url_to_left_image" right="url_to_left_right"][/image-comparator]`
 
 You may use the following parameters:
 
@@ -52,9 +52,9 @@ You may use the following parameters:
 Help to [translate](https://poeditor.com/projects/view?order=trans_asc&id=29123) this plugin.
 
 = HINT: = 
->There is also a [pro version](http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme) available with direct support and additional features like more modes, Visual Composer support, setting an inital value, linking images and more...
+>There is also a [pro version](http://q.gs/83UXn) available with direct support and additional features like more modes, Visual Composer support, setting an inital value, linking images and more...
 >
->[View pro version](http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme)
+>[View pro version](http://q.gs/83UXn)
 
 == Frequently Asked Questions ==
 
@@ -89,6 +89,10 @@ or
 3. Shortcode Generator
 
 == Changelog ==
+
+= 1.12.1 =
+
+* Added link to support forum and rating in administration
 
 = 1.12 =
 
