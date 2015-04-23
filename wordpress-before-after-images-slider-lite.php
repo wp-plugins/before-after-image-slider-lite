@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Before After Image Slider Lite
-Version: 1.12.2
+Version: 1.13
 Plugin URI: https://wordpress.org/plugins/before-after-image-slider-lite/
 Description: A simple and easy way to compare two images. There is also <a href="http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme" target="_blank">pro version</a> available with more features and better support.
 Author: Adrian M&ouml;rchen
@@ -14,7 +14,7 @@ if (!class_exists('WP')) {
     die();
 }
 
-define('BEFORE_AFTER_IMAGE_SLIDER_LITE_VERSION', '1.12.2');
+define('BEFORE_AFTER_IMAGE_SLIDER_LITE_VERSION', '1.13');
 
 require_once 'modules/tgm-plugin-activation.php';
 

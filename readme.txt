@@ -4,7 +4,7 @@ Donate link: http://q.gs/83UXn
 Tags: after, before, compare, editor, image, shortcode, slider, vafpress
 Requires at least: 4.0
 Tested up to: 4.2
-Stable tag: 1.12.2
+Stable tag: 1.13
 License: GPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
