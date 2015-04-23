@@ -3,8 +3,8 @@ Contributors: adrian2k7
 Donate link: http://q.gs/83UXn
 Tags: after, before, compare, editor, image, shortcode, slider, vafpress
 Requires at least: 4.0
-Tested up to: 4.1.1
-Stable tag: 1.12.1
+Tested up to: 4.2
+Stable tag: 1.12.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -89,6 +89,11 @@ or
 3. Shortcode Generator
 
 == Changelog ==
+
+= 1.12.2 =
+
+* *Security Fix* Updated TGM to latest version
+* Improved theme compatibility
 
 = 1.12.1 =
 

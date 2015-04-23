@@ -67,6 +67,13 @@ return array(
                             'description' => __('There is also a <a href="http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme" target="_blank">pro version</a> available with direct support and additional features like <strong>more modes, Visual Composer support, setting an inital value, linking images</strong> and <strong>more</strong>...<br />'
                                 . '<a href="http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme" target="_blank">Get Pro Version</a>', 'wordpress-before-after-images-slider-lite'),
                             'status' => 'normal'
+                        ),
+                        array(
+                            'type' => 'notebox',
+                            'name' => 'nb_2',
+                            'label' => __('Please rate', 'wordpress-before-after-images-slider-lite') . ' <img style="height: 16px;" src="' . plugins_url('stars.png', __FILE__) . '" />',
+                            'description' => __('If you like this plugin, please give it a <a href="https://wordpress.org/support/view/plugin-reviews/before-after-image-slider-lite" target="_blank">good rating</a>. If you think, there is something wrong, please use the support forum first.', 'wordpress-before-after-images-slider-lite'),
+                            'status' => 'normal'
                         )
                     )
                 )

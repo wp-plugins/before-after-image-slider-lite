@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Before After Image Slider Lite\n"
-"POT-Creation-Date: 2015-03-25 10:48+0100\n"
+"POT-Creation-Date: 2015-04-23 08:41+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.7.6\n"
 
 #: vafpress/vafpress-field-definition.php:3
 #: vafpress/vafpress-field-definition.php:4
@@ -100,6 +100,23 @@ msgstr ""
 "Verknüpfen von Bildern</strong> und <strong>mehr</strong> verfügbar...<br /"
 "><a href=\"http://codecanyon.net/item/wordpressjquery-before-after-image-"
 "slider/6503930?ref=scrobbleme\" target=\"_blank\">Pro Version kaufen</a>"
+
+#: vafpress/vafpress-field-definition.php:74
+msgid "Please rate"
+msgstr "Bewerten"
+
+#: vafpress/vafpress-field-definition.php:75
+msgid ""
+"If you like this plugin, please give it a <a href=\"https://wordpress.org/"
+"support/view/plugin-reviews/before-after-image-slider-lite\" target=\"_blank"
+"\">good rating</a>. If you think, there is something wrong, please use the "
+"support forum first."
+msgstr ""
+"Wenn du dieses Plugin magst, gib ihm bitte eine <a href=\"https://wordpress."
+"org/support/view/plugin-reviews/before-after-image-slider-lite\" target="
+"\"_blank\">gute Bewertung</a>. Wenn du denkst, irgendwas ist faul, nutze "
+"bitte das <a href=\"https://wordpress.org/support/plugin/before-after-image-"
+"slider-lite\" target=\"_blank\">Supportforum</a>"
 
 #: wordpress-before-after-images-slider-lite.php:149
 msgid "Translate"

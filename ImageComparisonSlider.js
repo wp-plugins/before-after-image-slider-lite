@@ -43,7 +43,7 @@ Scrobbleme.ImageComparisonSlider = function (element, jQuery) {
         this.domNode.find('.images').mousemove({
             'slider': slider,
             'slide': slide
-        }, this.throttle(this.clickable_callback.bind(this), 20));
+        }, this.throttle(this.clickable_callback.bind(this), 15));
     }
 }
 ;
