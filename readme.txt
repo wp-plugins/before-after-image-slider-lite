@@ -137,32 +137,13 @@ The basic shortcode looks like this:
 
 You may use the following parameters:
 
-<table>
-    <tr>
-        <td>**left**</td>
-        <td>(**Required**) Url or id of the left image.</td>
-    </tr>
-    <tr>
-        <td>left_alt</td>
-        <td>"alt" attribute of the left image.</td>
-    </tr>
-    <tr>
-        <td>**right**</td>
-        <td>(**Required**) Url or id of the right image.</td>
-    </tr><tr>
-        <td>right_alt</td>
-        <td>"alt" attribute of the right image.</td>
-    </tr><tr>
-        <td>title</td>
-        <td>Optional title.</td>
-    </tr><tr>
-        <td>width</td>
-        <td>Optional width, i.e. 70%.</td>
-    </tr><tr>
-        <td>classes</td>
-        <td>Additional CSS classes. **Hint** Use 'hover' to enable a mouse hover effect-</td>
-    </tr>
-</table>
+* **left** (required) - Url or id of the left image.
+* **left_alt** - "alt" attribute of the left image.
+* **right** (required) - Url or id of the right image.*
+* **right_alt** - "alt" attribute of the right image.
+* **title** - Optional title.
+* **width** Optional width, i.e. 70%.
+* **classes** - Additional CSS classes. **Hint** Use 'hover' to enable a mouse hover effect.
 
 = Shortcode Examples =
 
