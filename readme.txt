@@ -28,9 +28,9 @@ The lite version contains the following features:
 Please use the [support forum](http://wordpress.org/support/plugin/before-after-image-slider-lite) in case of any problems or questions before
 just giving a bad rating. We really take this seriously.
 
-** Usage **
+**Usage**
 
-Please see the [Usage](https://wordpress.org/plugins/before-after-image-slider-lite/other_notes/) section for more details on this.
+Please see the [Other Notes](https://wordpress.org/plugins/before-after-image-slider-lite/other_notes/) section for more details on this.
 
 **Translators**
 
