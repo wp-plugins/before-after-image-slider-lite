@@ -30,7 +30,7 @@ just giving a bad rating. We really take this seriously.
 
 ** Usage **
 
-Please see the [Usage]((https://wordpress.org/plugins/before-after-image-slider-lite/usage/)) section for more details on this.
+Please see the [Usage](https://wordpress.org/plugins/before-after-image-slider-lite/other_notes/) section for more details on this.
 
 **Translators**
 
@@ -164,7 +164,7 @@ You may use the following parameters:
     </tr>
 </table>
 
-= Shortcode exampleExamples =
+= Shortcode Examples =
 
 Just images:
 
