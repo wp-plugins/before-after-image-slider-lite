@@ -4,8 +4,6 @@ if (!defined('ABSPATH')) {
     die("Don't touch this.");
 }
 
-require_once 'class-tgm-plugin-activation.php';
-
 add_action('tgmpa_register', 'moewe_studio_register_required_plugins');
 
 if (!function_exists('moewe_studio_register_required_plugins')) {

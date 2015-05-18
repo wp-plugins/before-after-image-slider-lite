@@ -4,7 +4,7 @@ Donate link: http://q.gs/83UXn
 Tags: after, before, compare, editor, image, shortcode, slider, vafpress
 Requires at least: 4.0
 Tested up to: 4.2
-Stable tag: 1.13
+Stable tag: 1.14
 License: GPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -83,7 +83,11 @@ Always upgrade to the newest release to profit from bugfixes and new features.
 
 == Changelog ==
 
-= 1.12.2 =
+= 1.14 =
+
+* Hopefully finally fixed the theme incompatibility problems.
+
+= 1.13 =
 
 * *Security Fix* Updated TGM to latest version
 * Improved theme compatibility

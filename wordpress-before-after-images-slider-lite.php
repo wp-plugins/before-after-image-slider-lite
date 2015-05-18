@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Before After Image Slider Lite
-Version: 1.13
+Version: 1.14
 Plugin URI: https://wordpress.org/plugins/before-after-image-slider-lite/
 Description: A simple and easy way to compare two images. There is also <a href="http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme" target="_blank">pro version</a> available with more features and better support.
-Author: Adrian M&ouml;rchen
+Author: MOEWE (by Adrian M&ouml;rchen)
 Author URI: https://www.moewe-studio.com/
 Text Domain: wordpress-before-after-images-slider-lite
 Domain Path: /languages/
@@ -14,7 +14,7 @@ if (!class_exists('WP')) {
     die();
 }
 
-define('BEFORE_AFTER_IMAGE_SLIDER_LITE_VERSION', '1.13');
+define('BEFORE_AFTER_IMAGE_SLIDER_LITE_VERSION', '1.14');
 
 require_once 'modules/tgm-plugin-activation.php';
 
@@ -114,6 +114,9 @@ function wpbaimages_shortcode($attributes, $content = null)
  */
 function wpbaimage_extend_vafpress()
 {
+
+    require_once 'modules/class-tgm-plugin-activation.php';
+
     if ((!current_user_can('edit_posts') && !current_user_can('edit_pages')) || get_user_option('rich_editing') != 'true') {
         return;
     }
@@ -128,7 +131,6 @@ class Moewe_Before_After_Slider_Lite
 {
     function Moewe_Before_After_Slider_Lite()
     {
-        // Administration
         if (is_admin()) {
             add_filter('plugin_row_meta', array($this, 'init_row_meta'), 10, 2);
         }
@@ -143,15 +145,14 @@ class Moewe_Before_After_Slider_Lite
     function init_row_meta($links, $file)
     {
         if (strpos($file, 'wordpress-before-after-images-slider-lite.php') !== false) {
-            return array_merge(
-                $links,
-                array(
-                    '<a href="https://poeditor.com/projects/view?id=29123" target="_blank">' . __('Translate', 'wordpress-before-after-images-slider-lite') . '</a>',
-                    '<a href="http://wordpress.org/support/plugin/before-after-image-slider-lite" target="_blank">' . __('Support Forum', 'wordpress-before-after-images-slider-lite') . '</a>',
-                    '<a href="http://wordpress.org/support/view/plugin-reviews/before-after-image-slider-lite" target="_blank">' . __('Please Rate', 'wordpress-before-after-images-slider-lite') . '</a>',
-                    '<a href="http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme" target="_blank">' . __('Get Pro Version', 'wordpress-before-after-images-slider-lite') . '</a>',
-                )
-            );
+            $links[] = '<a href="https://poeditor.com/projects/view?id=29123" target="_blank">' . __('Translate', 'wordpress-before-after-images-slider-lite') . '</a>';
+            $links[] = '<a href="http://wordpress.org/support/plugin/before-after-image-slider-lite" target="_blank">' . __('Support Forum', 'wordpress-before-after-images-slider-lite') . '</a>';
+            $links[] = '<a href="http://wordpress.org/support/view/plugin-reviews/before-after-image-slider-lite" target="_blank">' . __('Please Rate', 'wordpress-before-after-images-slider-lite') . '</a>';
+            $links[] = '<a href="http://codecanyon.net/item/wordpressjquery-before-after-image-slider/6503930?ref=scrobbleme" target="_blank">' . __('Get Pro Version', 'wordpress-before-after-images-slider-lite') . '</a>';
+
+            if (!defined('VP_VERSION')) {
+                $links[] = '<p style="padding-top: 10px;"><a href="' . admin_url('themes.php?page=tgmpa-install-plugins') . '" style="color: darkgreen;"><span class="dashicons dashicons-info"></span><span style="text-decoration: underline;">Install or activate</span> Vafpress for optional shortcode generator.</a></p>';
+            }
         }
         return $links;
     }
