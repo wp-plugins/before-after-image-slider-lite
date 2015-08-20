@@ -1,6 +1,6 @@
 === Before After Image Slider Lite ===
 Contributors: adrian2k7
-Donate link: http://q.gs/83UXn
+Donate link: http://www.moewe.io/demo/before-after-slider-wordpress/
 Tags: after, before, compare, editor, image, shortcode, slider, vafpress
 Requires at least: 4.0
 Tested up to: 4.3
