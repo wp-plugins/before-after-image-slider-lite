@@ -1,6 +1,6 @@
-=== Before After Image Slider Lite ===
+﻿=== Before After Image Slider Lite ===
 Contributors: adrian2k7
-Donate link: http://www.moewe.io/demo/before-after-slider-wordpress/
+Donate link: http://q.gs/83UXn
 Tags: after, before, compare, editor, image, shortcode, slider, vafpress
 Requires at least: 4.0
 Tested up to: 4.3
@@ -12,7 +12,7 @@ A simple and easy way to compare two images.
 
 == Description ==
 
-The Before After Image Slider for WordPress allows you to easily show and compare two images. See screenshots or [demo](http://test.moewe-studio.com/before-after-image-slider-lite) for more information.
+The Before After Image Slider for WordPress allows you to easily show and compare two images. See screenshots or [demo](http://test.moewe.io/before-after-image-slider-lite) for more information.
 
 The lite version contains the following features:
 
@@ -167,9 +167,9 @@ Enable hover effect:
 Full example:
 
     [image-comparator
-        left="http://test.moewe-studio.com/before-after-image-slider-lite/wp-content/uploads/sites/12/2015/03/cobra_blend_right1.jpg"
+        left="http://test.moewe.io/before-after-image-slider-lite/wp-content/uploads/sites/12/2015/03/cobra_blend_right1.jpg"
         left_alt="The cobra is red"
-        right="http://test.moewe-studio.com/before-after-image-slider-lite/wp-content/uploads/sites/12/2015/03/cobra_blend_left.jpg"
+        right="http://test.moewe.io/before-after-image-slider-lite/wp-content/uploads/sites/12/2015/03/cobra_blend_left.jpg"
         right_alt="The cobra is black"
         width="70%" classes="hover"
         title="With hover (just move the mouse)"]
